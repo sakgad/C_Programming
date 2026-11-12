@@ -14,8 +14,8 @@ int main(void)
     str[strcspn(str, "\n")] = '\0';
 
     for (char* p = str; *p != '\0'; p++) {
-        if (*p >= 'a' && *p <= 'z') {
-            *p = *p - 'a' + 'A';
+        if (*p >= 'A' && *p <= 'Z') {
+            *p = *p - 'A' + 'a';
         }
 
         if (*p != ' ') {
